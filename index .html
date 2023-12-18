@@ -1,0 +1,89 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        /* Estilo para la barra de navegación centrada en un rectángulo */
+        header {
+            text-align: center;
+            position: relative; /* Permite posicionar el logo de forma absoluta con respecto al header */
+        }
+
+        nav {
+            background-color: #6c2af9; /* Color del fondo del rectángulo */
+            display: inline-block; /* Permite centrar el rectángulo */
+            padding: 10px; /* Espaciado interno para mayor legibilidad */
+            border-radius: 10px; /* Bordes redondeados del rectángulo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+            transition: transform 0.3s ease-in-out; /* Animación de transformación */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+			
+        }
+
+        /* Estilo del enlace del menú */
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff; /* Color del texto de los enlaces */
+        }
+
+        a:hover {
+            transform: translateY(-5px); /* Desplazamiento hacia arriba al pasar el puntero */
+        }
+
+        /* Estilo para posicionar el logo en la esquina superior derecha */
+        img {
+            position: absolute;
+            top: -10px; /* Baja el logo 50px desde la parte superior */
+            right: 10px;
+            width: 336px; /* Ancho del logo */
+            height: 226px; /* Altura del logo */
+        }
+
+        /* Estilo para el fondo de la página */
+        body {
+            background-color: #011423; /* Color de fondo de la página */
+            margin-left: 10; /* Elimina el margen predeterminado del body */
+			margin-right:0; /*eliminar marge de la derecha*/
+        }
+
+        /* Estilo para el título h1 */
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            font-family: "Serif fonts";
+            color: #fff; /* Cambié 'fff' por '#fff' para representar el color blanco */
+			text-align: center;
+			 position: center;
+			
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\aharr\OneDrive\Escritorio\web\index\img\_303cbc37-88aa-440f-ab68-a9a53bb225b1.jpeg" alt="Logo"> <!-- Cambia 'ruta_del_logo.png' con la ruta real de tu logo -->
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/aharr/OneDrive/Escritorio/web/index/index%20.html">Inicio</a></li>
+                <li><a href="file:///C:/Users/aharr/OneDrive/Escritorio/web/index/sobre-nosotros/contactos/formulario%20contacto.html">Contáctenos</a></li>
+                <li><a href="file:///C:/Users/aharr/OneDrive/Escritorio/web/index/sobre-nosotros/sobre%20nosotros.html">Sobre_Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Bienvenido a la página de inicio</h1>
+</body>
+</html>

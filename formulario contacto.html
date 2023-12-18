@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto con Nosotros</title>
+    <style>
+        /* Estilo para la barra de navegación centrada en un rectángulo */
+        header {
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            background-color: #6c2af9;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Estilo del enlace del menú */
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        a:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilo para posicionar el logo en la esquina superior derecha */
+        img {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            width: 336px;
+            height: 226px;
+        }
+
+        /* Estilo para el fondo de la página */
+        body {
+            background-color: #011423;
+            margin: 0;
+            color: #fff;
+        }
+
+        /* Estilo para el título h1 */
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            font-family: "Serif fonts";
+            text-align: center;
+            position: center;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            max-width: 400px;
+            margin: 0 auto; /* Centrar el formulario */
+            padding: 20px;
+            background-color: #011423;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #011423;
+            color: #fff;
+        }
+
+        input[type="submit"] {
+            background-color: #6c2af9;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\aharr\OneDrive\Escritorio\web\index\img\_303cbc37-88aa-440f-ab68-a9a53bb225b1.jpeg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/aharr/OneDrive/Escritorio/web/index/index%20.html">Inicio</a></li>
+                <li><a href="file:///C:/Users/aharr/OneDrive/Escritorio/web/index/sobre-nosotros/contactos/formulario%20contacto.html">Contáctenos</a></li>
+                <li><a href="file:///C:/Users/aharr/OneDrive/Escritorio/web/index/sobre-nosotros/sobre%20nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contacta con Nosotros</h1>
+
+    <!-- Formulario de contacto -->
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
